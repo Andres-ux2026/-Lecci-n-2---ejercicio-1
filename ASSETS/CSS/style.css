@@ -1,0 +1,33 @@
+body{
+    background-color:lightblue;
+}
+
+
+h1{
+    text-align: center;
+    color:red
+}
+footer{
+    text-align: center;
+    background-color: coral ;
+}
+aside {
+    display: flex;
+    flex-direction: column; /* Alinea el h3 y la imagen uno arriba del otro */
+    align-items: center;    /* Centra horizontalmente todo el contenido */
+    justify-content: center;/* Centra verticalmente (si el aside tiene altura) */
+    text-align: center;
+    padding: 20px;          /* Espaciado interno para que no pegue a los bordes */
+    border: 1px solid #ddd; /* Opcional: para ver los límites del aside */
+}
+
+/* Ajustamos la imagen para que sea responsiva */
+aside img {
+    max-width: 100%;        /* Evita que la imagen se salga del aside */
+    height: auto;           /* Mantiene la proporción */
+    display: block;         /* Elimina espacios extra en la base */
+    margin-top: 10px;       /* Separa la imagen del título h3 */
+    size: 10px;
+    width: 400px;
+    height: 300px;
+}
