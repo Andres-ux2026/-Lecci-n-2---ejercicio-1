@@ -1,11 +1,11 @@
 body{
-    background-color:lightblue;
+    background-color:rgb(17, 59, 73);
 }
 
 
-h1{
+header h1 {
     text-align: center;
-    color:red
+   
 }
 footer{
     text-align: center;
@@ -19,4 +19,31 @@ footer{
     width: 400px;
     height: 300px;
    margin:0 auto
+}
+
+.container{
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;      /* centra el container */
+  padding: 20px;
+  background-color: #352677;
+
+}
+#carouselExampleIndicators {
+  max-width: 400px;   /* ancho máximo en pantallas grandes */
+  max-height: 300px;  /* altura máxima en pantallas grandes */
+  width: 100%;        /* ancho relativo para pantallas pequeñas */
+  height:fit-content;       /* altura relativa, se ajusta con la imagen */
+  margin: 0 auto;     /* centra horizontalmente */
+}
+
+#carouselExampleIndicators .carousel-item {
+  height: 100%;    /* ocupa toda la altura del carrusel */
+}
+
+#carouselExampleIndicators .carousel-item img {
+  width: 100%;        /* ocupa todo el ancho del carrusel */
+  height: 100%;       /* ocupa toda la altura del carrusel */
+  object-fit: cover;  /* recorta la imagen manteniendo proporción */
+  display: block;     /* evita espacios extras */
 }
