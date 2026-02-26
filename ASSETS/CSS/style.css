@@ -1,10 +1,12 @@
 body{
-    background-color:rgb(17, 59, 73);
+    background-color:rgb(46, 43, 43);
 }
 
 
 header h1 {
     text-align: center;
+    color:blue
+    
    
 }
 footer{
@@ -22,28 +24,19 @@ footer{
 }
 
 .container{
-  width: 80%;
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;      /* centra el container */
-  padding: 20px;
-  background-color: #352677;
+  padding: 40px;
+  background-color:lightblue;
+  .btn{
+background-color: rgb(54, 154, 94);
+text-align: center;
 
 }
-#carouselExampleIndicators {
-  max-width: 400px;   /* ancho máximo en pantallas grandes */
-  max-height: 300px;  /* altura máxima en pantallas grandes */
-  width: 100%;        /* ancho relativo para pantallas pequeñas */
-  height:fit-content;       /* altura relativa, se ajusta con la imagen */
-  margin: 0 auto;     /* centra horizontalmente */
 }
+.btn{
+background-color: rgb(54, 154, 94);
+text-align: center;
 
-#carouselExampleIndicators .carousel-item {
-  height: 100%;    /* ocupa toda la altura del carrusel */
-}
-
-#carouselExampleIndicators .carousel-item img {
-  width: 100%;        /* ocupa todo el ancho del carrusel */
-  height: 100%;       /* ocupa toda la altura del carrusel */
-  object-fit: cover;  /* recorta la imagen manteniendo proporción */
-  display: block;     /* evita espacios extras */
 }
