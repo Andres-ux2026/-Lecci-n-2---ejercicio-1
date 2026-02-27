@@ -8,10 +8,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
-  <div class="container"> <!--Envuelve el contenido dentro de un container--> 
-
+  <div class="container text-white text-center py-5"> <!--Envuelve el contenido dentro de un container ademas aplico bootstrap--> 
+    
     <header>
-      <h1 class="text-danger"> AKELA GYM</h1> <!--Cabecera de mi pagina-->
+      <h1 class="display-1 fw-bold"> AKELA GYM</h1> <!--Cabecera de mi pagina aplicando hero-->
     </header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary "><!--Agrega una navbar superior con el título del sitio-->
       <div class="container-fluid">
@@ -49,13 +49,35 @@
   
     
 
-    <aside> <!--Lo utilice como contenido complementario-->
-      
-        <img src="/ASSETS/img/akela 1.jpeg" alt="Veget0" class="vegeta">
-
+     <aside class="my-4"> <!--Aplicando bootstrap en la imagen-->
+      <img src="/ASSETS/img/akela 1.jpeg"
+           alt="Imagen principal"
+           class="img-fluid d-block mx-auto rounded shadow"
+           width="400"
+           height="300">
     </aside>
 
-   <button type="button" class="btn">Ir</button>
+     <section class="bg-dark text-danger py-5">
+    <div class="container text-center">
+      <h1 class="display-3 fw-bold">Entrena Hoy, Transforma tu Mañana</h1>
+      <p class="lead mt-3 text-success">
+        En AKELA GYM potenciamos tu fuerza, disciplina y confianza con planes diseñados para lograr resultados reales.
+      </p>
+     <!-- Botón que "comunica el estado" mostrando una alerta -->
+    <button class="btn btn-primary btn-lg mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#statusAlert" aria-expanded="false" aria-controls="statusAlert">
+      Únete Ahora
+    </button>
+
+    <!-- Alerta oculta por defecto, se muestra al presionar el botón -->
+    <div class="collapse mt-4" id="statusAlert">
+      <div class="alert alert-info alert-dismissible fade show" role="alert">
+        ¡Bienvenido a AKELA GYM! Tu estado actual es: listo para entrenar.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+    </div>
+  </section>
+
+   
 
     <footer><!--Mi pie de pagina-->
       <p>
