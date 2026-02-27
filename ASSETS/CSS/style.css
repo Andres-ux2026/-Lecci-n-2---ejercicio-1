@@ -15,9 +15,6 @@ footer{
 }
 
 
-
-
-
 .container {
     width: 100%;
     max-width: 1200px;
@@ -27,8 +24,3 @@ footer{
     background-color: lightblue;
 }
 
-.navbar .navbar-brand,
-.navbar .nav-link,
-.navbar .dropdown-item {
-  font-size: 1.1rem; /* Cambia a tu tamaño deseado */
-}
