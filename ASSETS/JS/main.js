@@ -1,10 +1,30 @@
-// Obtener el botón
-const btnIrArriba = document.getElementById('boton');
+const botones = document.querySelectorAll(".agregar-carrito");
+const listaCarrito = document.getElementById("lista-carrito");
+const totalElemento = document.getElementById("total");
+const vaciarCarrito = document.getElementById("vaciar-carrito");
 
-// Escuchar clic
-btnIrArriba.addEventListener('click', () => {
-  window.scrollTo({
-    top: 0,          // Posición a la que quieres ir (arriba de la página)
-    behavior: 'smooth' // Hace que el scroll sea suave
+let total = 0;
+
+botones.forEach(boton => {
+  boton.addEventListener("click", () => {
+
+    const plan = boton.dataset.plan;
+    const precio = parseInt(boton.dataset.precio);
+
+    const item = document.createElement("li");
+    item.classList.add("list-group-item");
+
+    item.textContent = `${plan} - $${precio}`;
+
+    listaCarrito.appendChild(item);
+
+    total += precio;
+    totalElemento.textContent = total;
   });
+});
+
+vaciarCarrito.addEventListener("click", () => {
+  listaCarrito.innerHTML = "";
+  total = 0;
+  totalElemento.textContent = total;
 });
