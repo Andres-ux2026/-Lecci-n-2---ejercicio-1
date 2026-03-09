@@ -1,26 +1,79 @@
-body{
-    background-color:rgb(46, 43, 43);
+:root {
+    --accent-color: #ff4d00;
+    --card-bg: #1a1a1a;
+    --text-gray: #b0b0b0;
 }
 
 
-header h1 {
-    text-align: center;
-    color:rgb(180, 23, 44)
-    
-   
-}
-footer{
-    text-align: center;
-    background-color: coral ;
+
+.text-gradient {
+    background: linear-gradient(to right, #ffffff, #ff4d00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 5rem;
+    letter-spacing: -2px;
 }
 
-
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    /* centra el container */
-    padding: 40px;
-    background-color: lightblue;
+body {
+    background-color: #0f0f0f; /* Fondo oscuro moderno */
 }
 
+/* Navbar Moderna */
+.navbar {
+  background-color: rgba(15, 15, 15, 0.95) !important;
+  backdrop-filter: blur(10px); /* Efecto cristal esmerilado */
+  border-bottom: 1px solid #333;
+}
+
+.nav-link {
+  color: white !important;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.nav-link:hover {
+  color: var(--accent-color) !important;
+}
+
+/* Tarjetas de Planes */
+.card {
+  background-color: var(--card-bg) !important;
+  border: 1px solid #333 !important;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  border-color: var(--accent-color) !important;
+}
+
+.card-title {
+  color: white !important;
+  font-weight: bold;
+}
+
+.card-text {
+  color: var(--text-gray) !important;
+}
+
+/* Botones */
+.btn-primary {
+  background-color: var(--accent-color) !important;
+  border: none !important;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 20px;
+}
+
+.btn-primary:hover {
+  background-color: #e64500 !important;
+  box-shadow: 0 0 15px rgba(255, 77, 0, 0.4);
+}
+
+/* Carrito */
+.bg-light.text-dark {
+  background-color: #222 !important;
+  color: white !important;
+  border: 1px dashed var(--accent-color);
+}
